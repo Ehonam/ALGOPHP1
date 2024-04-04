@@ -15,14 +15,14 @@ Si la catégorie n’est pas gérée, merci de le préciser.</p>
 $ageEnfant = 10;
 
 function determinerCategorie($ageEnfant) {
-    if ($ageEnfant >= 6 && $ageEnfant <= 7) {
-        return "Poussin";
-    } elseif ($ageEnfant >= 8 && $ageEnfant <= 9) {
-        return "Pupille";
-    } elseif ($ageEnfant >= 10 && $ageEnfant <= 11) {
-        return "Minime";
-    } elseif ($ageEnfant >= 12) {
+    if ($ageEnfant >= 12) {
         return "Cadet";
+    } elseif ($ageEnfant >= 10) {
+        return "Minime";
+    } elseif ($ageEnfant >= 8) {
+        return "Pupille";
+    } elseif ($ageEnfant >= 6) {
+        return "Poussin";
     } else {
         return "Catégorie non gérée";
     }
