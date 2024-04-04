@@ -17,7 +17,7 @@ echo "Table de $nombre :<br>";
 function afficherTableMultiplication($nombre) {
     for ($i = 1; $i <= 12; $i++) {
         $resultat = $nombre * $i;
-        echo "$i x $nombre = $resultat<br>"; // return à cette ligne ne renvoit que la première ligne
+        echo "$i x $nombre = $resultat<br>";
     }
 }
 $table = afficherTableMultiplication($nombre);
