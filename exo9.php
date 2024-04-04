@@ -12,9 +12,7 @@ $age = 32;
 $sexe = "F";
 
 function imposable($age, $sexe) {
-   if ($sexe === 'F' && $age >= 18 && $age <= 35) {
-       return "imposable";
-   } elseif ($sexe === 'M' && $age > 20) {
+   if (($sexe === 'F' AND $age >= 18 && $age <= 35) OR ($sexe === 'M' AND $age > 20)) {
        return "imposable";
    } else {
        return "non imposable";
