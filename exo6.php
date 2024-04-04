@@ -6,23 +6,19 @@
 
 
 <?php
-$prix_unitaire = 9.99;
-$quantité = 5;
-$tva = 0.2;
 
-function facture($prix_unitaire) {
-$prix_unitaire = 9.99;
-$quantité = 5;
-$tva = 0.2;
+  $prix_unitaire = 9.99;
+  $quantité = 5;
+  $tva = 0.2;
 $ht = $prix_unitaire * $quantité;
-return $ht * (1 + $tva);
-  }
+$montantfacture = $ht * (1 + $tva);
+
   
 echo "Prix unitaire de l'article : $prix_unitaire";
 echo " €<br>";
 echo " Quantité : $quantité<br>";
 echo " Taux de TVA : $tva<br>";
-echo "Le montant de la facture à régler est de : ".facture($prix_unitaire);
+echo "Le montant de la facture à régler est de : $montantfacture";
 echo " €";
 
 
