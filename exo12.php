@@ -7,7 +7,7 @@
 <?php
 
 // Tableau de prénoms et de langues associées
-$personnes_langues = array("Laurie" => "FRA", "Carlos" => "ESP", "Gordon" => "ENG");
+$personnes_langues = array("Laurie" => "FRA", "Carlos" => "ESP", "Gordon" => "ENG", "Ole" => "DAN", "Mats" => "DEU", "Mikele" => "ITA", "Adjovi" => "EWE");
 
 // Fonction personnalisée pour dire bonjour dans la langue appropriée
 function saluerPersonnes($personnes_langues){
@@ -23,6 +23,18 @@ function saluerPersonnes($personnes_langues){
                 break;
             case "ESP":
                 echo "Hola $prenom<br>";
+                break;
+             case "DAN":
+                echo "Hej $prenom<br>";
+                break;
+            case "DEU":
+                echo "Hallo $prenom<br>";
+                break;
+            case "ITA":
+                echo "Buongiorno $prenom<br>";
+                break;
+            case "EWE":
+                echo "Ofoa $prenom<br>";
                 break;
             default:
                 echo "Langue inconnue pour $prenom<br>";
