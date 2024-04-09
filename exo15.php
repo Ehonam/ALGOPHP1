@@ -20,7 +20,7 @@ class Personne {
         $this->prenom = $prenom;
         $this->date_naissance = new DateTime($date_naissance);
     }
-// creation getter et des setter
+// creation getter
     public function getAge() {
         $dateCourante = new DateTime();
         $ecart = $this->date_naissance->diff($dateCourante);
