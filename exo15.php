@@ -62,6 +62,8 @@ public function setDate_naissance($date_naissance)
         $dateCourante = new DateTime();
         $intervalle = $this->date_naissance->diff($dateCourante);
         return $intervalle->y;
+         // si on ne met pas "->y" à la fin on aura unle message d'erreur suivant: DateInterval could not be converted to string
+
     }
 
 }
