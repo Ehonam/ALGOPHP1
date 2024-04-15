@@ -14,7 +14,7 @@ class Personne {
     private $prenom;
     private $date_naissance;
     //Si une propriété est définie en private, on ne pas y accéder à l'extérieur de la classe 
-    //D'où l'utilté des getters qui eux sont publiques et peuvent donc être récupérés à l'extérieur de la classe 
+    //D'où l'utilité des getters qui eux sont publiques et peuvent donc être récupérés à l'extérieur de la classe 
 
     // initialisation des valeurs
     public function __construct($nom, $prenom, $date_naissance) {
