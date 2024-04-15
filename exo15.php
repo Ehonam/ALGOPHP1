@@ -10,9 +10,9 @@ $p2 = new Personne("DUCHEMIN", "Alice", "1985-01-17") ;</p>
 
 class Personne {
     // création des attributs
-    public $nom;
-    public $prenom;
-    public $date_naissance;
+    private $nom;
+    private $prenom;
+    private $date_naissance;
 
     // initialisation des valeurs
     public function __construct($nom, $prenom, $date_naissance) {
@@ -21,7 +21,7 @@ class Personne {
         $this->date_naissance = new DateTime($date_naissance);
     }
 
-    // mise en place des getters & setters
+
 public function getNom()
     {
         return $this->nom;
@@ -69,7 +69,7 @@ public function setDate_naissance($date_naissance)
     $p2 = new Personne("DUCHEMIN", "Alice", "1985-01-17");
     
     //affichage des informations
-echo $p1->prenom . " " . $p1->nom . " a " . $p1->getAge() . " ans<br>";
-echo $p2->prenom . " " . $p2->nom . " a " . $p2->getAge() . " ans<br>";
+echo $p1->getPrenom() . " " . $p1->getNom() . " a " . $p1->getAge() . " ans<br>";
+echo $p2->getPrenom() . " " . $p2->getNom() . " a " . $p2->getAge() . " ans<br>";
 
 ?>
